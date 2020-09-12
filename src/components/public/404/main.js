@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./style.css";
-import { Helmet } from "react-helmet";
 
 export class main extends Component {
   render() {
@@ -8,6 +7,18 @@ export class main extends Component {
       <>
         <title>404 :(</title>
         <div>
+          <div
+            style={{
+              position: "fixed",
+              top: "0",
+              left: "0",
+              bottom: "0",
+              right: "0",
+              height: "100%",
+              width: "100%",
+              backgroundColor: "#95c2de",
+            }}
+          ></div>
           <div className="mainbox">
             <link
               href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&display=swap"
@@ -31,9 +42,6 @@ export class main extends Component {
             </div>
           </div>
         </div>
-        <Helmet>
-          <style>{"body { background-color: #95c2de; }"}</style>
-        </Helmet>
       </>
     );
   }

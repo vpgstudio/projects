@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import MainApp from "./components/components/main/MainApp";
 import ProjectsMainApp from "./components/components/projects/main/ProjectsMainApp";
+import ProjectsIdApp from "./components/components/projects/id/Projectidmain";
 
 import ForeOFore from "./components/public/404/main";
 import NavApp from "./components/public/nav/NavApp";
@@ -19,6 +20,7 @@ export class AppHandler extends Component {
           <Switch>
             <Route exact path="/" component={MainApp} />
             <Route exact path="/about" component={ProjectsMainApp} />
+            <Route exact path="/about/projects/:id" component={ProjectsIdApp} />
 
             <Route component={ForeOFore} />
           </Switch>
