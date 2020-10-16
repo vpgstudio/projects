@@ -3,7 +3,7 @@ import React from "react";
 export const ProjectsMainApp = () => {
   function requestUserRepos() {
     const xhr = new XMLHttpRequest();
-    const url = "http://pyapivpgstudio.herokuapp.com/pr/all";
+    const url = "https://api.vpgstudio.com/pr";
     xhr.open("GET", url, true);
     xhr.onload = function () {
       const data = JSON.parse(this.response);
